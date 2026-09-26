@@ -1,0 +1,21 @@
+*{
+    margin:0;
+    padding:0;
+    border: border-box;;
+}
+.hero{
+    background-image:linear-gradient(rgba(0,0,0,0.44),rgba(0,0,0,0.44)), url("BusYatra.png");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+.container{
+    color:#ffffff;
+    text-shadow:2px 2px 8px rgba(0,0,0,0.60); 
+}
+.search-box{
+    width:90%;
+}
+.input-group input{
+    outline:none;
+}
