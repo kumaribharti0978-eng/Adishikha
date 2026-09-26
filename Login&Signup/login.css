@@ -1,0 +1,98 @@
+  body {
+            background: #f5f9ff;
+        }
+
+        .main-section {
+            min-height: calc(100vh - 80px);
+            background-image: url("../Images/BusYatra.png");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .main-section::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                90deg,
+                rgba(0, 60, 130, .85),
+                rgba(0, 120, 220, .35),
+                rgba(255, 255, 255, .55)
+            );
+        }
+
+        .main-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .journey {
+            font-size: 65px;
+        }
+
+        .journey span {
+            color: #00aaff;
+        }
+
+        .feature-icon {
+            width: 58px;
+            height: 58px;
+        }
+
+        .login-card {
+            background: rgba(255, 255, 255, .96);
+            border: 1px solid #b9d8ff;
+            border-radius: 16px;
+        }
+
+        .bus-logo {
+            font-size: 33px;
+        }
+
+        .role-btn {
+            height: 52px;
+        }
+
+        .login-input {
+            height: 53px;
+        }
+
+        .login-button {
+            height: 53px;
+        }
+
+        .form-control:focus {
+            border-color: #0d6efd;
+            box-shadow: none;
+        }
+
+        .input-group:focus-within .input-group-text {
+            border-color: #0d6efd;
+        }
+
+        @media (max-width: 991px) {
+            .left-section {
+                display: none;
+            }
+
+            .login-card {
+                max-width: 600px;
+                margin: 30px auto;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .journey {
+                font-size: 40px;
+            }
+
+            .login-card {
+                margin: 15px 8px;
+            }
+
+            .bus-logo {
+                font-size: 32px;
+            }
+            
+        }

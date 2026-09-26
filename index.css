@@ -4,7 +4,7 @@
     border: border-box;;
 }
 .hero{
-    background-image:linear-gradient(rgba(0,0,0,0.44),rgba(0,0,0,0.44)), url("BusYatra.png");
+    background-image:linear-gradient(rgba(0,0,0,0.44),rgba(0,0,0,0.44)), url("./Images/BusYatra.png");
     background-size: cover;
     background-position: center;
     height: 600px;
@@ -18,4 +18,18 @@
 }
 .input-group input{
     outline:none;
+}
+.input-group input:focus {
+    border:none;
+    box-shadow: none;
+    outline: none;
+}
+.input-group:focus-within {
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+.input-group input:focus {
+    box-shadow: none;
+    outline: none;
 }

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AdiShikha | Login</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../Bootsrapicon/Bootsrapicon/bootstrap-icons.css">
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand bg-white border-bottom">
+        <div class="container-fluid px-4 px-lg-5">
+            <a class="navbar-brand fw-bold text-primary fs-2" href="#">
+                <i class="bi bi-bus-front-fill"></i>
+                <span class="bus text-primary">Adi</span><span class="yatra text-black">Shikha</span>
+            </a>
+            <div class="d-flex align-items-center gap-2">
+                <span class="text-primary-emphasis d-none d-sm-inline">
+                    New to AdiShikha ?
+                </span>
+                <a href="./signup.html" class="text-primary fw-semibold text-decoration-none">
+
+                    <i class="bi bi-person-plus fs-5"></i>
+                    Create Account
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN -->
+
+    <main class="main-section">
+        <div class="container-fluid">
+            <div class="row main-content min-vh-100">
+                <!-- LEFT SECTION -->
+                <div class="col-lg-6 left-section text-white pt-5 ps-lg-5">
+                    <div class="mt-4">
+                        <div class="fs-5">
+                            <span class="d-inline-block bg-info" style="width:58px;height:4px;">
+                            </span>
+                            <span class="ms-2">
+                                Welcome Back!
+                            </span>
+                        </div>
+                        <h1 class="journey fw-bold mt-3">
+                            Your Journey
+                            <br>
+                            <span>Starts Here</span>
+                        </h1>
+                        <p class="fs-5 mt-3">
+                            Book your bus tickets quickly, safely
+                            <br>
+                            and comfortably with AdiShikha.
+                        </p>
+                        <!-- FEATURE -->
+                        <div class="d-flex align-items-center mt-4">
+                            <div class="feature-icon rounded-circle
+                                bg-primary d-flex align-items-center
+                                justify-content-center fs-3">
+                                <i class="bi bi-bus-front-fill"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h6 class="fw-bold mb-1">
+                                    Wide Network
+                                </h6>
+                                <small>
+                                    Across cities & states
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="feature-icon rounded-circle
+                                bg-primary d-flex align-items-center
+                                justify-content-center fs-3">
+
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h6 class="fw-bold mb-1">
+                                    Safe & Secure
+                                </h6>
+                                <small>
+                                    Your data is protected
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="feature-icon rounded-circle
+                                bg-primary d-flex align-items-center
+                                justify-content-center fs-3">
+
+                                <i class="bi bi-clock"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h6 class="fw-bold mb-1">
+                                    24/7 Support
+                                </h6>
+                                <small>
+                                    We're here to help
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="feature-icon rounded-circle
+                                bg-primary d-flex align-items-center
+                                justify-content-center fs-3">
+                                <i class="bi bi-wallet2"></i>
+                            </div>
+
+                            <div class="ms-3">
+
+                                <h6 class="fw-bold mb-1">
+                                    Best Prices
+                                </h6>
+
+                                <small>
+                                    Affordable & great deals
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT LOGIN -->
+
+                <div class="col-lg-6 d-flex align-items-start
+                    justify-content-center">
+
+                    <div class="login-card shadow-sm w-100   p-md-5 my-3">
+
+                        <!-- LOGO -->
+
+                        <div class="text-center">
+
+                            <div class="bus-logo fw-bold text-primary">
+
+                                <i class="bi bi-bus-front-fill"></i>
+                                <span class="bus text-primary">Adi</span><span class="yatra text-black">Shikha</span>
+
+                            </div>
+
+                            <h2 class="fw-bold text-primary-emphasis mt-2">
+                                Login to Your Account
+                            </h2>
+
+                            <p class="text-primary-emphasis fs-5">
+                                Access your bookings, manage your trips
+                                <br>
+                                and more.
+                            </p>
+
+                        </div>
+
+
+                        <!-- ROLE -->
+
+                        <div class="row g-0 border border-primary-subtle
+                            rounded-3 overflow-hidden mb-4">
+
+                            <div class="col-6">
+
+                                <button type="button" class="btn btn-primary
+                                    rounded-0 w-100 role-btn" onclick="selectRole(this)">
+
+                                    <i class="bi bi-person-fill fs-5"></i>
+                                    Customer
+
+                                </button>
+
+                            </div>
+
+                            <div class="col-6">
+
+                                <button type="button" class="btn btn-light
+                                    text-primary-emphasis rounded-0
+                                    w-100 role-btn" onclick="selectRole(this)">
+
+                                    <i class="bi bi-bus-front-fill fs-5"></i>
+                                    Operator
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+
+                        <label class="form-label fw-semibold
+                            text-primary-emphasis">
+
+                            Email or Mobile Number
+
+                        </label>
+
+                        <div class="input-group mb-4">
+
+                            <span class="input-group-text bg-white
+                                text-primary-emphasis">
+
+                                <i class="bi bi-envelope"></i>
+
+                            </span>
+
+                            <input type="text" id="email" class="form-control login-input"
+                                placeholder="Enter your email or mobile number">
+
+                        </div>
+
+
+                        <!-- PASSWORD -->
+
+                        <label class="form-label fw-semibold
+                            text-primary-emphasis">
+
+                            Password
+
+                        </label>
+
+                        <div class="input-group mb-3">
+
+                            <span class="input-group-text bg-white
+                                text-primary-emphasis">
+
+                                <i class="bi bi-lock"></i>
+
+                            </span>
+
+                            <input type="password" id="password" class="form-control login-input"
+                                placeholder="Enter your password">
+
+                            <button type="button" class="input-group-text bg-white" onclick="showPassword()">
+
+                                <i class="bi bi-eye" id="eye"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- REMEMBER -->
+
+                        <div class="d-flex justify-content-between
+                            align-items-center mb-4">
+
+                            <div class="form-check">
+
+                                <input type="checkbox" class="form-check-input" id="remember">
+
+                                <label class="form-check-label" for="remember">
+
+                                    Remember me
+
+                                </label>
+
+                            </div>
+
+                            <a href="#" class="text-primary fw-semibold
+                                text-decoration-none">
+
+                                Forgot Password?
+
+                            </a>
+
+                        </div>
+
+
+                        <!-- LOGIN -->
+
+                        <button class="btn btn-primary w-100
+                            login-button fs-5 fw-semibold" onclick="loginUser()">
+
+                            <i class="bi bi-arrow-right me-2"></i>
+                            Login
+                               <!-- ACCOUNT -->
+
+                        <p class=" text-primary-emphasis
+                            mt-4 mb-0 fs-6">
+
+                            Don't have an account?
+
+                            <a href="./signup.html"
+                                class="text-primary fw-semibold">
+
+                                Create Account
+
+                            </a>
+
+                        </p>
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+        </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function selectRole(button) {
+
+            let buttons = document.querySelectorAll(".role-btn");
+
+            buttons.forEach(function (btn) {
+
+                btn.classList.remove("btn-primary");
+                btn.classList.add("btn-light");
+
+            });
+
+            button.classList.remove("btn-light");
+            button.classList.add("btn-primary");
+        }
+
+
+        function showPassword() {
+
+            let password =
+                document.getElementById("password");
+
+            let eye =
+                document.getElementById("eye");
+
+            if (password.type === "password") {
+
+                password.type = "text";
+
+                eye.classList.remove("bi-eye");
+                eye.classList.add("bi-eye-slash");
+
+            } else {
+
+                password.type = "password";
+
+                eye.classList.remove("bi-eye-slash");
+                eye.classList.add("bi-eye");
+
+            }
+
+        }
+
+
+        function loginUser() {
+
+            let email =
+                document.getElementById("email").value.trim();
+
+            let password =
+                document.getElementById("password").value.trim();
+
+            if (email === "" || password === "") {
+
+                alert("Please fill all the details.");
+
+                return;
+            }
+
+            alert("Login Successful!");
+
+        }
+
+    </script>
+
+</body>
+
+</html>
