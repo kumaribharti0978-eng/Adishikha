@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+     <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand bg-white border-bottom">
+        <div class="container-fluid px-4 px-lg-5">
+            <a class="navbar-brand fw-bold text-primary fs-3" href="#">
+                <i class="bi bi-bus-front-fill"></i>
+                <span class="bus text-primary">Adi</span><span class="yatra text-black">Shikha</span>
+            </a>
+            <div class="d-flex align-items-center gap-2">
+                <span class="text-primary-emphasis d-none d-sm-inline">
+                    New to AdiShika ?
+                </span>
+                <a href="./signup.html" class="text-primary fw-semibold text-decoration-none">
+
+                    <i class="bi bi-person-plus fs-5"></i>
+                    Create Account
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN -->
+
+    <main class="main-section">
+        <div class="container-fluid">
+            <div class="row main-content min-vh-100">
+                <!-- LEFT SECTION -->
+                <div class="col-lg-6 left-section text-white pt-5 ps-lg-5">
+                    <div class="mt-4">
+                        <div class="fs-5">
+                            <span class="d-inline-block bg-info" style="width:58px;height:4px;">
+                            </span>
+                            <span class="ms-2">
+                                Welcome Back!
+                            </span>
+                        </div>
+                        <h1 class="journey fw-bold mt-2">
+                            Your Journey
+                            <br>
+                            <span>Starts Here</span>
+                        </h1>
+                        <p class="fs-5 mt-3">
+                            Book your bus tickets quickly, safely
+                            <br>
+                            and comfortably with AdiShikha.
+                        </p>
+                        <!-- FEATURE -->
+                        <div class="d-flex align-items-center mt-4">
+                            <div class="feature-icon rounded-circle bg-primary d-flex align-items-center justify-content-center fs-3">
+                                <i class="bi bi-bus-front-fill"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h6 class="fw-bold mb-1">
+                                    Wide Network
+                                </h6>
+                                <small>
+                                    Across cities & states
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="feature-icon rounded-circle
+                                bg-primary d-flex align-items-center
+                                justify-content-center fs-3">
+
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h6 class="fw-bold mb-1">
+                                    Safe & Secure
+                                </h6>
+                                <small>
+                                    Your data is protected
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="feature-icon rounded-circle
+                                bg-primary d-flex align-items-center
+                                justify-content-center fs-3">
+
+                                <i class="bi bi-clock"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h6 class="fw-bold mb-1">
+                                    24/7 Support
+                                </h6>
+                                <small>
+                                    We're here to help
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="feature-icon rounded-circle
+                                bg-primary d-flex align-items-center
+                                justify-content-center fs-3">
+                                <i class="bi bi-wallet2"></i>
+                            </div>
+
+                            <div class="ms-3">
+
+                                <h6 class="fw-bold mb-1">
+                                    Best Prices
+                                </h6>
+
+                                <small>
+                                    Affordable & great deals
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT signup -->
+
+                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                         <div class="signup-card shadow w-75 p-4 p-md-5 my-4 ">
+
+                        <!-- LOGO -->
+
+                        <div class="text-center">
+
+                            <div class="bus-logo fw-bold text-primary">
+
+                                <i class="bi bi-bus-front-fill"></i>
+                                <span class="bus text-primary">Adi</span><span class="yatra text-black">Shikha</span>
+
+                            </div>
+
+                            <h2 class="fw-bold text-primary-emphasis mt-2 fs-3">
+                                Create Your Account
+                            </h2>
+
+                            <p class="text-primary-emphasis fs-5">
+                                Join AdiShikha and start your journey.
+                            </p>
+
+                        </div>
+
+
+                        <!-- ROLE -->
+
+                        <div class="row g-0 border border-primary-subtle
+                            rounded-3 overflow-hidden mb-4">
+
+                            <div class="col-6">
+
+                                <button type="button" class="btn btn-primary
+                                    rounded-0 w-100 role-btn" onclick="selectRole(this)">
+
+                                    <i class="bi bi-person-fill fs-5"></i>
+                                    Customer
+
+                                </button>
+
+                            </div>
+
+                            <div class="col-6">
+
+                                <button type="button" class="btn btn-light
+                                    text-primary-emphasis rounded-0
+                                    w-100 role-btn" onclick="selectRole(this)">
+
+                                    <i class="bi bi-bus-front-fill fs-5"></i>
+                                    Operator
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                         <!-- NAME -->
+                        <label class="form-label fw-semibold">
+                        Full Name
+                        </label>
+
+                        <div class="input-group mb-3">
+
+                            <span class="input-group-text">
+                                <i class="bi bi-person"></i>
+                             </span>
+
+                            <input type="text"class="form-control" placeholder="Enter your full name">
+                        </div>
+
+
+                             <!-- EMAIL -->
+                        <label class="form-label fw-semibold">
+                           Email Address
+                         </label>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope"></i>
+                            </span>
+
+                            <input type="email"class="form-control"placeholder="Enter your email">
+                        </div>
+
+
+                         <!-- MOBILE -->
+                        <label class="form-label fw-semibold">
+                             Mobile Number
+                        </label>
+
+                        <div class="input-group mb-3">
+
+                            <span class="input-group-text">
+                                <i class="bi bi-phone"></i>
+                            </span>
+
+                            <input type="tel" class="form-control"placeholder="Enter mobile number">
+
+                        </div>
+
+
+                          <!-- PASSWORD -->
+                        <label class="form-label fw-semibold">
+                            Password
+                        </label>
+
+                        <div class="input-group mb-3">
+
+                            <span class="input-group-text">
+                                <i class="bi bi-lock"></i>
+                            </span>
+
+                            <input type="password" class="form-control" placeholder="Create password">
+                        </div>
+
+
+                           <!-- CONFIRM PASSWORD -->
+                        <label class="form-label fw-semibold">
+                            Confirm password
+                        </label>
+
+                        <div class="input-group mb-3">
+
+                            <span class="input-group-text">
+                                <i class="bi bi-lock-fill"></i>
+                            </span>
+
+                            <input type="password" class="form-control" placeholder="Confirm password">
+                        </div>
+
+
+                <!-- CREATE ACCOUNT -->
+                <button class="btn btn-primary w-100 fw-semibold">
+                    Create Account
+                    <i class="bi bi-arrow-right ms-2"></i>
+                </button>
+
+
+                <!-- LOGIN -->
+                <p class="text-center mt-3 mb-0">
+
+                    Already have an account?
+
+                    <a href="login.html"
+                       class="text-primary fw-semibold text-decoration-none">
+                        Login
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</main>
+</body>
+</html>
