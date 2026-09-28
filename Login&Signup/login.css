@@ -4,7 +4,7 @@
 
         .main-section {
             min-height: calc(100vh - 80px);
-            background-image: url("../Images/BusYatra.png");
+            background-image: url("../Images/Bus-image.png");
             background-size: cover;
             background-position: center;
             position: relative;
@@ -55,16 +55,17 @@
         }
 
         .login-input {
-            height: 53px;
+            height: 45px;
         }
 
         .login-button {
-            height: 53px;
+            height: 48px;
         }
 
         .form-control:focus {
             border-color: #0d6efd;
             box-shadow: none;
+            outline: none;
         }
 
         .input-group:focus-within .input-group-text {
