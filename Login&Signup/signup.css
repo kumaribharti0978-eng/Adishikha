@@ -7,49 +7,50 @@ body {
     background-image: url("../Images/Bus-image.png");
     background-size: cover;
     background-position: center;
-    position:relative;
+    position: relative;
 }
+
 .main-section::before {
     content: "";
     position: absolute;
     inset: 0;
     background: linear-gradient(90deg,
-        rgba(0, 60, 130, .85),
-        rgba(0, 120, 220, .35),
-        rgba(255, 255, 255, .55));
+            rgba(0, 60, 130, .85),
+            rgba(0, 120, 220, .35),
+            rgba(255, 255, 255, .55));
 }
 
- .main-content {
-            position: relative;
-            z-index: 1;
-        }
+.main-content {
+    position: relative;
+    z-index: 1;
+}
 
-        .journey {
-            font-size: 65px;
-        }
+.journey {
+    font-size: 65px;
+}
 
-        .journey span {
-            color: #00aaff;
-        }
+.journey span {
+    color: #00aaff;
+}
 
-        .feature-icon {
-            width: 58px;
-            height: 58px;
-        }
+.feature-icon {
+    width: 58px;
+    height: 58px;
+}
 
-        .login-card {
-            background: rgba(255, 255, 255, .96);
-            border: 1px solid #b9d8ff;
-            border-radius: 16px;
-        }
+.login-card {
+    background: rgba(255, 255, 255, .96);
+    border: 1px solid #b9d8ff;
+    border-radius: 16px;
+}
 
-        .bus-logo {
-            font-size: 33px;
-        }
+.bus-logo {
+    font-size: 33px;
+}
 
-        .role-btn {
-            height: 52px;
-        }
+.role-btn {
+    height: 52px;
+}
 
 .signup-card {
     width: 500px;
@@ -57,22 +58,3 @@ body {
     border: 1px solid #dbe8f5;
     border-radius: 16px;
 }
-
-.input-group-text {
-    background: white;
-    border-right: none;
-}
-
-.form-control {
-    border-left: none;
-}
-
-.form-control:focus {
-    border-color: #0d6efd;
-    box-shadow: none;
-}
-
-.input-group:focus-within .input-group-text {
-    border-color: #0d6efd;
-}
-

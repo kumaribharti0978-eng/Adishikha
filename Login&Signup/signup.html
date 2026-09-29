@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./signup.css">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../Bootsrapicon/Bootsrapicon/bootstrap-icons.css">
 </head>
-<body>
-    
-     <!-- NAVBAR -->
 
-    <nav class="navbar navbar-expand bg-white border-bottom">
-        <div class="container-fluid px-4 px-lg-5">
+<body>
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand bg-white border-bottom fixed-top">
+        <div class="container-fluid px-lg-5">
             <a class="navbar-brand fw-bold text-primary fs-3" href="#">
                 <i class="bi bi-bus-front-fill"></i>
                 <span class="bus text-primary">Adi</span><span class="yatra text-black">Shikha</span>
@@ -32,18 +37,16 @@
 
     <main class="main-section">
         <div class="container-fluid">
-            <div class="row main-content min-vh-100">
+            <div class="row main-content min-vh-99">
                 <!-- LEFT SECTION -->
-                <div class="col-lg-6 left-section text-white pt-5 ps-lg-5">
-                    <div class="mt-4">
+                <div class="col-lg-6 left-section text-white ps-lg-5">
+                    <div class="mt-3">
                         <div class="fs-5">
-                            <span class="d-inline-block bg-info" style="width:58px;height:4px;">
-                            </span>
                             <span class="ms-2">
                                 Welcome Back!
                             </span>
                         </div>
-                        <h1 class="journey fw-bold mt-2">
+                        <h1 class="journey fw-bold fs-1">
                             Your Journey
                             <br>
                             <span>Starts Here</span>
@@ -55,7 +58,8 @@
                         </p>
                         <!-- FEATURE -->
                         <div class="d-flex align-items-center mt-4">
-                            <div class="feature-icon rounded-circle bg-primary d-flex align-items-center justify-content-center fs-3">
+                            <div
+                                class="feature-icon rounded-circle bg-primary d-flex align-items-center justify-content-center fs-3">
                                 <i class="bi bi-bus-front-fill"></i>
                             </div>
                             <div class="ms-3">
@@ -131,7 +135,7 @@
                 <!-- RIGHT signup -->
 
                 <div class="col-lg-6 d-flex align-items-center justify-content-center">
-                         <div class="signup-card shadow w-75 p-4 p-md-5 my-4 ">
+                    <div class="signup-card shadow  p-4 p-md-5 my-4 ">
 
                         <!-- LOGO -->
 
@@ -187,38 +191,38 @@
 
                         </div>
 
-                         <!-- NAME -->
+                        <!-- NAME -->
                         <label class="form-label fw-semibold">
-                        Full Name
+                            Full Name
                         </label>
 
                         <div class="input-group mb-3">
 
                             <span class="input-group-text">
                                 <i class="bi bi-person"></i>
-                             </span>
+                            </span>
 
-                            <input type="text"class="form-control" placeholder="Enter your full name">
+                            <input type="text" class="form-control" placeholder="Enter your full name">
                         </div>
 
 
-                             <!-- EMAIL -->
+                        <!-- EMAIL -->
                         <label class="form-label fw-semibold">
-                           Email Address
-                         </label>
+                            Email Address
+                        </label>
 
                         <div class="input-group mb-3">
                             <span class="input-group-text">
                                 <i class="bi bi-envelope"></i>
                             </span>
 
-                            <input type="email"class="form-control"placeholder="Enter your email">
+                            <input type="email" class="form-control" placeholder="Enter your email">
                         </div>
 
 
-                         <!-- MOBILE -->
+                        <!-- MOBILE -->
                         <label class="form-label fw-semibold">
-                             Mobile Number
+                            Mobile Number
                         </label>
 
                         <div class="input-group mb-3">
@@ -227,12 +231,11 @@
                                 <i class="bi bi-phone"></i>
                             </span>
 
-                            <input type="tel" class="form-control"placeholder="Enter mobile number">
+                            <input type="number" class="form-control" placeholder="Enter mobile number" id="number">
 
                         </div>
-
-
-                          <!-- PASSWORD -->
+                        <div id="MobileMsg" class="small text-danger mb-3"></div>
+                        <!-- PASSWORD -->
                         <label class="form-label fw-semibold">
                             Password
                         </label>
@@ -243,11 +246,12 @@
                                 <i class="bi bi-lock"></i>
                             </span>
 
-                            <input type="password" class="form-control" placeholder="Create password">
+                            <input type="password" id="password" class="form-control" placeholder="Create Password">
+
                         </div>
+                        <div id="passwordMsg" class="small text-danger mb-3"></div>
 
-
-                           <!-- CONFIRM PASSWORD -->
+                        <!-- CONFIRM PASSWORD -->
                         <label class="form-label fw-semibold">
                             Confirm password
                         </label>
@@ -258,36 +262,97 @@
                                 <i class="bi bi-lock-fill"></i>
                             </span>
 
-                            <input type="password" class="form-control" placeholder="Confirm password">
+                            <input type="password" class="form-control" placeholder="Confirm password"
+                                id="confirmpassword">
                         </div>
+                        <div id="cnfpasswordMsg" class="small text-danger mb-3"></div>
 
 
-                <!-- CREATE ACCOUNT -->
-                <button class="btn btn-primary w-100 fw-semibold">
-                    Create Account
-                    <i class="bi bi-arrow-right ms-2"></i>
-                </button>
+                        <!-- CREATE ACCOUNT -->
+                        <button class="btn btn-primary w-100 fw-semibold">
+                            Create Account
+                            <i class="bi bi-arrow-right ms-2"></i>
+                        </button>
 
 
-                <!-- LOGIN -->
-                <p class="text-center mt-3 mb-0">
+                        <!-- LOGIN -->
+                        <p class="text-center mt-3 mb-0">
 
-                    Already have an account?
+                            Already have an account?
 
-                    <a href="login.html"
-                       class="text-primary fw-semibold text-decoration-none">
-                        Login
-                    </a>
+                            <a href="login.html" class="text-primary fw-semibold text-decoration-none">
+                                Login
+                            </a>
 
-                </p>
+                        </p>
+
+                    </div>
+
+                </div>
 
             </div>
 
         </div>
+    </main>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <script>
+        // number
+        let MobileNumber = document.getElementById('number');
+        let MobileMsg = document.getElementById('MobileMsg');
+        MobileNumber.addEventListener("input",function(){
+            let MobileNo=MobileNumber.value;
+            if (MobileNo.length !==10){
+                MobileMsg.innerHTML="Mobile Number Should be 10 Digit";
+            }
+            else{
+                MobileMsg.innerHTML="";
+            }
+        })
 
-    </div>
+        // Password
+        let password = document.getElementById("password");
+        let passwordMsg = document.getElementById("passwordMsg");
 
-</div>
-</main>
+        password.addEventListener("input", function () {
+
+            let value = password.value;
+            if (!/[A-Z]/.test(value)) {
+                passwordMsg.innerHTML = "Please add 1 capital letter<br>";
+            }
+
+            else if (!/[0-9]/.test(value)) {
+                passwordMsg.innerHTML = "Please add 1 number<br>";
+            }
+
+            else if (!/[!@#$%^&*]/.test(value)) {
+                passwordMsg.innerHTML = "Please add 1 special character";
+            }
+            else {
+                passwordMsg.innerHTML = "";
+            }
+
+        });
+        // Confirm Password
+
+        let confirmPassword = document.getElementById("confirmpassword");
+        let confirmMsg = document.getElementById("cnfpasswordMsg");
+
+        confirmPassword.addEventListener("input", function () {
+
+            if (password.value !== confirmPassword.value) {
+                confirmMsg.innerHTML = "Password does not match";
+            } else {
+
+                confirmMsg.innerHTML = "";
+
+            }
+
+        });
+
+
+
+
+    </script>
 </body>
+
 </html>
