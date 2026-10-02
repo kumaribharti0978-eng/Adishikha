@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AdiShikha | Signup</title>
     <link rel="stylesheet" href="./signup.css">
     <link rel="stylesheet" href="./login.css">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
@@ -22,12 +22,12 @@
             </a>
             <div class="d-flex align-items-center gap-2">
                 <span class="text-primary-emphasis d-none d-sm-inline">
-                    New to AdiShika ?
+                    Already at AdiShika ?
                 </span>
-                <a href="./signup.html" class="text-primary fw-semibold text-decoration-none">
+                <a href="./login.html" class="text-primary fw-semibold text-decoration-none">
 
-                    <i class="bi bi-person-plus fs-5"></i>
-                    Create Account
+                    <i class="bi bi-person fs-5"></i>
+                    Login
                 </a>
             </div>
         </div>
@@ -43,7 +43,7 @@
                     <div class="mt-3">
                         <div class="fs-5">
                             <span class="ms-2">
-                                Welcome Back!
+                                 <pre>      Welcome Back!</pre>
                             </span>
                         </div>
                         <h1 class="journey fw-bold fs-1">
@@ -141,18 +141,18 @@
 
                         <div class="text-center">
 
-                            <div class="bus-logo fw-bold text-primary">
+                            <div class="bus-logo fw-bold text-primary fs-5">
 
                                 <i class="bi bi-bus-front-fill"></i>
                                 <span class="bus text-primary">Adi</span><span class="yatra text-black">Shikha</span>
 
                             </div>
 
-                            <h2 class="fw-bold text-primary-emphasis mt-2 fs-3">
+                            <h2 class="fw-bold text-primary-emphasis mt-2 fs-4">
                                 Create Your Account
                             </h2>
 
-                            <p class="text-primary-emphasis fs-5">
+                            <p class="text-black-50 fs-6">
                                 Join AdiShikha and start your journey.
                             </p>
 
@@ -216,8 +216,9 @@
                                 <i class="bi bi-envelope"></i>
                             </span>
 
-                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <input type="email" class="form-control" placeholder="Enter your email" id="email">
                         </div>
+                        <div id="EmailMsg" class="small text-danger mb-3"></div>
 
 
                         <!-- MOBILE -->
@@ -296,6 +297,18 @@
     </main>
     <script src="../bootstrap/js/bootstrap.js"></script>
     <script>
+        //email
+        let Email=document.getElementById('email');
+        let EmailMsg=document.getElementById('EmailMsg');
+        Email.addEventListener("input", function(){
+            let EmailId=Email.value
+             if (!/[@gmail.com]/.test(EmailId)){
+                EmailMsg.innerHTML="@gmail.com is Missing";
+            }
+            else{
+                EmailMsg.innerHTML="";
+            }
+        })
         // number
         let MobileNumber = document.getElementById('number');
         let MobileMsg = document.getElementById('MobileMsg');
