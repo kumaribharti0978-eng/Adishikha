@@ -102,22 +102,677 @@
             </div>
         </div>
 
-            <!--  Bus filter -->
-        <div class="container my-4">
-           <div class="search-box bg-white shadow rounded-3 px-3 py-3 mt-5 ">
-            <div class="row g-4">
-                <div class="col-lg-3 mb-3">
-                    <div class="filter-box">
-                        <h4>
-                            <i class="bi bi-funnel text-black"> Filters</i>
-                        </h4>
-                    
-                        <hr>
+        <!-- BUS RESULTS SECTION -->
+        <div class="container-fluid py-5">
+             <div class="row g-4">
 
+            <!-- ================= FILTERS ================= -->
+            <div class="col-lg-3 col-md-4">
+
+            <div class="card shadow-sm border-1">
+                <div class="card-body">
+
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-funnel"></i> Filters
+                    </h5>
+
+                    <!-- Bus Type -->
+                    <h6 class="fw-bold">🚌 Bus Type</h6>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" checked>
+                        <label class="form-check-label">
+                            AC Sleeper <span class="text-muted">(12)</span>
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">
+                            AC Seater <span class="text-muted">(8)</span>
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">
+                            Non AC Sleeper <span class="text-muted">(5)</span>
+                        </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">
+                            Non AC Seater <span class="text-muted">(3)</span>
+                        </label>
+                    </div>
+
+                    <hr>
+
+                    <!-- Price Range -->
+                    <h6 class="fw-bold">₹ Price Range</h6>
+
+                    <input type="range"
+                           class="form-range"
+                           min="500"
+                           max="3500"
+                           value="3500">
+
+                    <div class="d-flex justify-content-between">
+                        <small>₹500</small>
+                        <small>₹3,500</small>
+                    </div>
+
+                    <hr>
+
+                    <!-- Departure Time -->
+                    <h6 class="fw-bold">🕐 Departure Time</h6>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">
+                            Before 6 AM <span class="text-muted">(4)</span>
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">
+                            6 AM - 12 PM <span class="text-muted">(7)</span>
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">
+                            12 PM - 6 PM <span class="text-muted">(6)</span>
+                        </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">
+                            After 6 PM <span class="text-muted">(8)</span>
+                        </label>
+                    </div>
+
+                    <hr>
+
+                    <!-- Operator -->
+                    <h6 class="fw-bold">🚌 Operator</h6>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">VRL Travels</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">KSRTC</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">SRS Travels</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">Orange Travels</label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">Other</label>
+                    </div>
+
+                    <button class="btn btn-outline-primary w-100">
+                        <i class="bi bi-arrow-counterclockwise"></i>
+                        Reset Filters
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- ================= BUSES FOUND ================= -->
+        <div class="col-lg-9 col-md-8">
+
+            <!-- Heading -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+
+                <h6 class="fw-bold mb-0">
+                    12 Buses Found
+                </h6>
+
+                <div class="d-flex align-items-center gap-2">
+                    <small class="text-muted">Sort by</small>
+
+                    <select class="form-select form-select-sm"
+                            style="width:160px;">
+                        <option>Price (Low to High)</option>
+                        <option>Price (High to Low)</option>
+                        <option>Departure Time</option>
+                        <option>Rating</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+            <!-- ================= BUS 1 ================= -->
+            <div class="card border-1 shadow-sm mb-2">
+                <div class="card-body">
+
+                    <div class="row align-items-center">
+
+                        <!-- Image -->
+                        <div class="col-lg-2 col-md-3">
+                            <img src="Images/bus1.jpeg"
+                                 class="img-fluid rounded"
+                                 alt="VRL Travels">
+                        </div>
+
+                        <!-- Bus Details -->
+                        <div class="col-lg-5 col-md-5">
+
+                            <h6 class="fw-bold mb-1">
+                                VRL Travels
+                            </h6>
+
+                            <small class="text-muted">
+                                AC Sleeper • 2+1
+                            </small>
+
+                            <div class="text-warning small">
+                                ★ 4.5
+                                <span class="text-muted">
+                                    (420 reviews)
+                                </span>
+                            </div>
+
+                            <div class="d-flex justify-content-between mt-3">
+
+                                <div>
+                                    <strong>06:00 AM</strong>
+                                    <br>
+                                    <small>Bengaluru</small>
+                                </div>
+
+                                <div class="text-center text-muted">
+                                    ─── 12h 30m ───
+                                    <br>
+                                    <small>Non Stop</small>
+                                </div>
+
+                                <div>
+                                    <strong>06:30 PM</strong>
+                                    <br>
+                                    <small>Ranchi</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-3 col-md-2">
+
+                            <small>❄ Free WiFi</small><br>
+                            <small>⚡ Charging Point</small><br>
+                            <small>🧳 Blanket</small><br>
+                            <small>💧 Water Bottle</small>
+
+                        </div>
+
+                        <!-- Price -->
+                        <div class="col-lg-2 text-end">
+
+                            <h5 class="fw-bold">
+                                ₹1,500
+                            </h5>
+
+                            <small class="text-muted">
+                                per seat
+                            </small>
+
+                            <br>
+
+                            <button class="btn btn-primary btn-sm mt-2">
+                                Book Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- ================= BUS 2 ================= -->
+            <div class="card border-1 shadow-sm mb-3">
+                <div class="card-body">
+
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-2 col-md-3">
+                            <img src="Images/bus4.jpeg"
+                                 class="img-fluid rounded"
+                                 alt="KSRTC">
+                        </div>
+
+                        <div class="col-lg-5 col-md-5">
+
+                            <h6 class="fw-bold mb-1">
+                                KSRTC
+                            </h6>
+
+                            <small class="text-muted">
+                                AC Seater • 2+1
+                            </small>
+
+                            <div class="text-warning small">
+                                ★ 4.3
+                                <span class="text-muted">
+                                    (315 reviews)
+                                </span>
+                            </div>
+
+                            <div class="d-flex justify-content-between mt-3">
+
+                                <div>
+                                    <strong>06:30 AM</strong>
+                                    <br>
+                                    <small>Bengaluru</small>
+                                </div>
+
+                                <div class="text-center text-muted">
+                                    ─── 12h 00m ───
+                                    <br>
+                                    <small>Non Stop</small>
+                                </div>
+
+                                <div>
+                                    <strong>06:30 PM</strong>
+                                    <br>
+                                    <small>Ranchi</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-3 col-md-2">
+
+                            <small>❄ Free WiFi</small><br>
+                            <small>⚡ Charging Point</small><br>
+                            <small>🧳 Blanket</small><br>
+                            <small>💧 Water Bottle</small>
+
+                        </div>
+
+                        <div class="col-lg-2 text-end">
+
+                            <h5 class="fw-bold">
+                                ₹1,300
+                            </h5>
+
+                            <small class="text-muted">
+                                per seat
+                            </small>
+
+                            <br>
+
+                            <button class="btn btn-primary btn-sm mt-2">
+                                Book Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- ================= BUS 3 ================= -->
+            <div class="card border-1 shadow-sm mb-3">
+                <div class="card-body">
+
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-2 col-md-3">
+                            <img src="Images/bus2.jpeg"
+                                 class="img-fluid rounded"
+                                 alt="SRS Travels">
+                        </div>
+
+                        <div class="col-lg-5 col-md-5">
+
+                            <h6 class="fw-bold mb-1">
+                                SRS Travels
+                            </h6>
+
+                            <small class="text-muted">
+                                AC Seater • 2+2
+                            </small>
+
+                            <div class="text-warning small">
+                                ★ 4.0
+                                <span class="text-muted">
+                                    (632 reviews)
+                                </span>
+                            </div>
+
+                            <div class="d-flex justify-content-between mt-3">
+
+                                <div>
+                                    <strong>10:00 AM</strong>
+                                    <br>
+                                    <small>Bengaluru</small>
+                                </div>
+
+                                <div class="text-center text-muted">
+                                    ─── 13h 30m ───
+                                    <br>
+                                    <small>1 Stop</small>
+                                </div>
+
+                                <div>
+                                    <strong>11:30 PM</strong>
+                                    <br>
+                                    <small>Ranchi</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-3 col-md-2">
+
+                            <small>❄ AC</small><br>
+                            <small>⚡ Charging Point</small><br>
+                            <small>🧳 Recliner Seats</small><br>
+                            <small>💧 Water Bottle</small>
+
+                        </div>
+
+                        <div class="col-lg-2 text-end">
+
+                            <h5 class="fw-bold">
+                                ₹1,400
+                            </h5>
+
+                            <small class="text-muted">
+                                per seat
+                            </small>
+
+                            <br>
+
+                            <button class="btn btn-primary btn-sm mt-2">
+                                Book Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- ================= BUS 4 ================= -->
+            <div class="card border-1 shadow-sm mb-3">
+                <div class="card-body">
+
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-2 col-md-3">
+                            <img src="Images/bus5.jpeg"
+                                 class="img-fluid rounded"
+                                 alt="SRS Travels">
+                        </div>
+
+                        <div class="col-lg-5 col-md-5">
+
+                            <h6 class="fw-bold mb-1">
+                                Orange Travels
+                            </h6>
+
+                            <small class="text-muted">
+                                AC Seater • 2+2
+                            </small>
+
+                            <div class="text-warning small">
+                                ★ 4.0
+                                <span class="text-muted">
+                                    (632 reviews)
+                                </span>
+                            </div>
+
+                            <div class="d-flex justify-content-between mt-3">
+
+                                <div>
+                                    <strong>10:00 AM</strong>
+                                    <br>
+                                    <small>Bengaluru</small>
+                                </div>
+
+                                <div class="text-center text-muted">
+                                    ─── 13h 30m ───
+                                    <br>
+                                    <small>1 Stop</small>
+                                </div>
+
+                                <div>
+                                    <strong>11:30 PM</strong>
+                                    <br>
+                                    <small>Ranchi</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-3 col-md-2">
+
+                            <small>❄ AC</small><br>
+                            <small>⚡ Charging Point</small><br>
+                            <small>🧳 Recliner Seats</small><br>
+                            <small>💧 Water Bottle</small>
+
+                        </div>
+
+                        <div class="col-lg-2 text-end">
+
+                            <h5 class="fw-bold">
+                                ₹1,400
+                            </h5>
+
+                            <small class="text-muted">
+                                per seat
+                            </small>
+
+                            <br>
+
+                            <button class="btn btn-primary btn-sm mt-2">
+                                Book Now
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- ================= BUS 5 ================= -->
+            <div class="card border-1 shadow-sm mb-3">
+                <div class="card-body">
+
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-2 col-md-3">
+                            <img src="Images/bus4.jpeg"
+                                 class="img-fluid rounded"
+                                 alt="SRS Travels">
+                        </div>
+
+                        <div class="col-lg-5 col-md-5">
+
+                            <h6 class="fw-bold mb-1">
+                                Aditi Travels
+                            </h6>
+
+                            <small class="text-muted">
+                                AC Seater • 2+2
+                            </small>
+
+                            <div class="text-warning small">
+                                ★ 4.0
+                                <span class="text-muted">
+                                    (632 reviews)
+                                </span>
+                            </div>
+
+                            <div class="d-flex justify-content-between mt-3">
+
+                                <div>
+                                    <strong>10:00 AM</strong>
+                                    <br>
+                                    <small>Bengaluru</small>
+                                </div>
+
+                                <div class="text-center text-muted">
+                                    ─── 13h 30m ───
+                                    <br>
+                                    <small>1 Stop</small>
+                                </div>
+
+                                <div>
+                                    <strong>11:30 PM</strong>
+                                    <br>
+                                    <small>Ranchi</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-3 col-md-2">
+
+                            <small>❄ AC</small><br>
+                            <small>⚡ Charging Point</small><br>
+                            <small>🧳 Recliner Seats</small><br>
+                            <small>💧 Water Bottle</small>
+
+                        </div>
+
+                        <div class="col-lg-2 text-end">
+
+                            <h5 class="fw-bold">
+                                ₹1,400
+                            </h5>
+
+                            <small class="text-muted">
+                                per seat
+                            </small>
+
+                            <br>
+
+                            <button class="btn btn-primary btn-sm mt-2">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= BUS 6 ================= -->
+            <div class="card border-1 shadow-sm mb-3">
+                <div class="card-body">
+
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-2 col-md-3">
+                            <img src="Images/bus6.jpeg"
+                                 class="img-fluid rounded"
+                                 alt="SRS Travels">
+                        </div>
+
+                        <div class="col-lg-5 col-md-5">
+
+                            <h6 class="fw-bold mb-1">
+                                Vishikha Travels
+                            </h6>
+
+                            <small class="text-muted">
+                                AC Seater • 2+2
+                            </small>
+
+                            <div class="text-warning small">
+                                ★ 4.0
+                                <span class="text-muted">
+                                    (632 reviews)
+                                </span>
+                            </div>
+
+                            <div class="d-flex justify-content-between mt-3">
+
+                                <div>
+                                    <strong>10:00 AM</strong>
+                                    <br>
+                                    <small>Bengaluru</small>
+                                </div>
+
+                                <div class="text-center text-muted">
+                                    ─── 13h 30m ───
+                                    <br>
+                                    <small>1 Stop</small>
+                                </div>
+
+                                <div>
+                                    <strong>11:30 PM</strong>
+                                    <br>
+                                    <small>Ranchi</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-3 col-md-2">
+
+                            <small>❄ AC</small><br>
+                            <small>⚡ Charging Point</small><br>
+                            <small>🧳 Recliner Seats</small><br>
+                            <small>💧 Water Bottle</small>
+
+                        </div>
+
+                        <div class="col-lg-2 text-end">
+
+                            <h5 class="fw-bold">
+                                ₹1,400
+                            </h5>
+
+                            <small class="text-muted">
+                                per seat
+                            </small>
+
+                            <br>
+
+                            <button class="btn btn-primary btn-sm mt-2">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+    </div>
+</div>
     </div>
 
 </body>
