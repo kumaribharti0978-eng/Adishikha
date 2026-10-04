@@ -1,0 +1,9 @@
+.hero{
+    background-image:linear-gradient(rgba(0,0,0,0.44),rgba(0,0,0,0.44)), url("./Images/Search bus.jpeg ");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+.container{
+    color:#ffffff;
+}

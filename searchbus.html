@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdiShikha | Search Buses</title>
+    <link rel="stylesheet" href="search bus.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./Bootsrapicon/Bootsrapicon/bootstrap-icons.css">
+</head>
+<body>
+    <script src="./bootstrap/js/bootstrap.js"></script>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+        <div class="container">
+            <!-- logo -->
+            <a class="navbar-brand fs-5 fw-bold" href="#">
+                <i class="bi bi-bus-front-fill text-primary"></i>
+                <span class="bus text-primary">Adi</span><span class="yatra text-black">Shikha</span>
+            </a>
+
+            <!-- navbar -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav mx-auto gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="../searchbus.html">Search Bus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">My Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- login,SignUp -->
+                <div class="d-flex gap-2 align-items-center">
+                    <a href="./Login&Signup/login.html" class="text-black text-decoration-none pb">Login</a>
+                    <a href="./Login&Signup/signup.html" class="btn btn-primary ms-3">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <div class="hero">
+        <div class="container">
+            <div class="hero-content text-white pt-5">
+                <h3>
+                    <i class="bi bi-bus-front-fill"></i>
+                    Search Buses
+                </h3>
+
+                <p class="ms-4">Find the best buses for your journey.
+                    Compare prices , timings and comfort.
+                </p>
+            </div>
+            <div class="search-box bg-white shadow rounded-3 px-3 py-3 mt-5 search-box">
+                <div class="row g-3 align-items-end">
+                    <!-- from -->
+                    <div class="col-md-3">
+                        <label class="from-label fw-semibold text-primary-emphasis">From:</label><br>
+
+                        <div class="input-group">
+                            <span class="input-group-text bg-white border-end-0">
+                                <i class="bi bi-geo-alt-fill text-primary-emphasis"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Departure" aria-label="Recipient’s username" aria-describedby="basic-addon2">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="from-lable fw-semibold text-primary-emphasis">To:</label><br>
+
+                        <div class="input-group">
+                            <span class="input-group-text bg-white border-end-0">
+                                <i class="bi bi-geo-alt-fill text-primary-emphasis"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Destination"
+                                aria-label="username" aria-describedby="basic-addon2">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label class="from-lable fw-semibold text-primary-emphasis">Journey Date:</label><br>
+                        <div class="input-group">
+                            <input type="date" class="form-control border-start-0 text-center py-1">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <a href="#" class="btn btn-primary w-100">
+                            <i class="bi bi-search text-white ms-3"></i> Search Bus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!--  Bus filter -->
+        <div class="container my-4">
+           <div class="search-box bg-white shadow rounded-3 px-3 py-3 mt-5 ">
+            <div class="row g-4">
+                <div class="col-lg-3 mb-3">
+                    <div class="filter-box">
+                        <h4>
+                            <i class="bi bi-funnel text-black"> Filters</i>
+                        </h4>
+                    
+                        <hr>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
