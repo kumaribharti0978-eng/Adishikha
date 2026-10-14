@@ -7,7 +7,7 @@
     background-image:linear-gradient(rgba(0,0,0,0.44),rgba(0,0,0,0.44)), url("./Images/BusYatra.png");
     background-size: cover;
     background-position: center;
-    height: 800px;
+    height: 600px;
 }
 .container{
     color:#ffffff;

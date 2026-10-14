@@ -64,39 +64,50 @@
             </div>
             <div class="search-box bg-white shadow rounded-3 px-3 py-3 mt-5 search-box">
                 <div class="row g-3 align-items-end">
+
+
                     <!-- from -->
-                    <div class="col-md-3">
+            
+                    <div class="col-md-3 position-relative">
                         <label class="from-label fw-semibold text-primary-emphasis">From:</label><br>
 
                         <div class="input-group">
                             <span class="input-group-text bg-white border-end-0">
                                 <i class="bi bi-geo-alt-fill text-primary-emphasis"></i>
                             </span>
-                            <input type="text" class="form-control" placeholder="Departure" aria-label="Recipient’s username" aria-describedby="basic-addon2">
+                            <input type="text" id="fromInput" class="form-control" placeholder="Departure" autocomplete="off">
                         </div>
+
+                        <div id="fromSuggestions" class="suggestion-box"></div>
                     </div>
-                    <div class="col-md-3">
+
+                    <!-- To -->
+                    <div class="col-md-3 position-relative">
                         <label class="from-lable fw-semibold text-primary-emphasis">To:</label><br>
 
                         <div class="input-group">
                             <span class="input-group-text bg-white border-end-0">
                                 <i class="bi bi-geo-alt-fill text-primary-emphasis"></i>
                             </span>
-                            <input type="text" class="form-control" placeholder="Destination"
-                                aria-label="username" aria-describedby="basic-addon2">
+                            <input type="text" id="toInput" class="form-control" placeholder="Destination"
+                                autocomplete="off">
                         </div>
-                    </div>
 
+                        <div id="toSuggestions" class="suggestion-box"></div>
+                    </div>
+                    <!-- Date -->
                     <div class="col-md-3">
                         <label class="from-lable fw-semibold text-primary-emphasis">Journey Date:</label><br>
                         <div class="input-group">
                             <input type="date" class="form-control border-start-0 text-center py-1">
                         </div>
                     </div>
-
+                     <!-- Search bus button -->
                     <div class="col-md-3">
-                        <a href="#" class="btn btn-primary w-100">
-                            <i class="bi bi-search text-white ms-3"></i> Search Bus</a>
+                        <button type="button" id="searchBusBtn" class="btn btn-primary w-100">
+                            <i class="bi bi-search text-white"></i>
+                                Search Bus
+                        </button>
                     </div>
                 </div>
             </div>
@@ -243,7 +254,7 @@
             <!-- Heading -->
             <div class="d-flex justify-content-between align-items-center mb-3">
 
-                <h6 class="fw-bold mb-0">
+                <h6 class="fw-bold mb-0" id="busCount">
                     12 Buses Found
                 </h6>
 
@@ -263,7 +274,7 @@
 
 
             <!-- ================= BUS 1 ================= -->
-            <div class="card border-1 shadow-sm mb-2">
+            <div class="card border-1 shadow-sm mb-3 bus-card" data-from="bengaluru" data-to="Ranchi">
                 <div class="card-body">
 
                     <div class="row align-items-center">
@@ -352,7 +363,7 @@
 
 
             <!-- ================= BUS 2 ================= -->
-            <div class="card border-1 shadow-sm mb-3">
+            <div class="card border-1 shadow-sm mb-3 bus-card" data-from="Patna" data-to="Ranchi">
                 <div class="card-body">
 
                     <div class="row align-items-center">
@@ -385,7 +396,7 @@
                                 <div>
                                     <strong>06:30 AM</strong>
                                     <br>
-                                    <small>Bengaluru</small>
+                                    <small>Patna</small>
                                 </div>
 
                                 <div class="text-center text-muted">
@@ -438,7 +449,7 @@
 
 
             <!-- ================= BUS 3 ================= -->
-            <div class="card border-1 shadow-sm mb-3">
+            <div class="card border-1 shadow-sm mb-3 bus-card" data-from="Bengaluru" data-to="Ranchi">
                 <div class="card-body">
 
                     <div class="row align-items-center">
@@ -524,7 +535,7 @@
 
 
             <!-- ================= BUS 4 ================= -->
-            <div class="card border-1 shadow-sm mb-3">
+            <div class="card border-1 shadow-sm mb-3 bus-card" data-from="Bengaluru" data-to="Ranchi">
                 <div class="card-body">
 
                     <div class="row align-items-center">
@@ -606,7 +617,7 @@
             </div>
 
             <!-- ================= BUS 5 ================= -->
-            <div class="card border-1 shadow-sm mb-3">
+            <div class="card border-1 shadow-sm mb-3 bus-card" data-from="Bengaluru" data-to="Ranchi">
                 <div class="card-body">
 
                     <div class="row align-items-center">
@@ -688,7 +699,7 @@
             </div>
 
             <!-- ================= BUS 6 ================= -->
-            <div class="card border-1 shadow-sm mb-3">
+            <div class="card border-1 shadow-sm mb-3 bus-card" data-from="Bengaluru" data-to="Ranchi">
                 <div class="card-body">
 
                     <div class="row align-items-center">
@@ -773,7 +784,132 @@
 
     </div>
 </div>
-    </div>
+
+
+<!-- JavaScript -->
+<script>
+
+
+    <!-- Autocomplete JavaScript -->
+
+const locations = [
+    "Patna",
+    "Ranchi",
+    "Delhi",
+    "Kolkata",
+    "Bengaluru",
+    "Mumbai",
+    "Gaya"
+];
+
+function setupSuggestions(inputId, suggestionId) {
+
+    const input = document.getElementById(inputId);
+    const suggestionBox = document.getElementById(suggestionId);
+
+    input.addEventListener("input", function () {
+
+        const value = input.value.toLowerCase().trim();
+
+        suggestionBox.innerHTML = "";
+
+        if (value === "") {
+            suggestionBox.style.display = "none";
+            return;
+        }
+
+        const result = locations.filter(function(city) {
+            return city.toLowerCase().includes(value);
+        });
+
+        if (result.length === 0) {
+            suggestionBox.style.display = "none";
+            return;
+        }
+
+        result.forEach(function(city) {
+
+            const item = document.createElement("div");
+
+            item.className = "suggestion-item";
+
+            item.innerHTML = `
+                <i class="bi bi-geo-alt-fill"></i>
+               <span> ${city} </span>
+            `;
+
+            item.addEventListener("click", function() {
+                input.value = city;
+                suggestionBox.style.display = "none";
+            });
+
+            suggestionBox.appendChild(item);
+        });
+
+        suggestionBox.style.display = "block";
+    });
+}
+
+setupSuggestions("fromInput", "fromSuggestions");
+setupSuggestions("toInput", "toSuggestions");
+
+
+// Search button code
+
+
+const searchButton = document.getElementById("searchBusBtn");
+
+searchButton.addEventListener("click", function () {
+
+    const from = document.getElementById("fromInput").value.trim();
+    const to = document.getElementById("toInput").value.trim();
+
+    const buses = document.querySelectorAll(".bus-card");
+
+    let count = 0;
+
+    // if (from === "" || to === "") {
+    //     alert("Please select depature and destination location.");
+    //     return;
+    // }
+
+    if(from === ""){
+        alert("Please select your depature location.");
+        return;
+    }
+
+    if(to === ""){
+        alert("please select your destination location.");
+        return;
+    }
+
+    buses.forEach(function (bus) {
+
+        const busFrom = bus.getAttribute("data-from");
+        const busTo = bus.getAttribute("data-to");
+
+        if (
+            busFrom.toLowerCase() === from.toLowerCase() &&
+            busTo.toLowerCase() === to.toLowerCase()
+        ) {
+            bus.style.display = "block";
+            count++;
+        } else {
+            bus.style.display = "none";
+        }
+
+    });
+
+    document.getElementById("busCount").innerText =
+        count + " Buses Found";
+
+    if (count === 0) {
+        alert("Sorry! No buses available from " + from + " to " + to);
+    }
+
+});
+
+</script>
 
 </body>
 </html>
