@@ -4,7 +4,7 @@
     border: border-box;;
 }
 .hero{
-    background-image:linear-gradient(rgba(0,0,0,0.44),rgba(0,0,0,0.44)), url("./Images/BusYatra.png");
+    background-image:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url("./Images/BusYatra.png");
     background-size: cover;
     background-position: center;
     height: 600px;
@@ -32,24 +32,6 @@
     box-shadow: none;
     outline: none;
 }
-/* .route-card {
-    border: 1px solid #e5eef8;
-    transition: 0.3s;
+.footer{
+  background: #0f305d;
 }
-
-.route-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10) !important;
-}
-
-.route-icon {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background: #e8f3ff;
-    color: #0d6efd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-} */

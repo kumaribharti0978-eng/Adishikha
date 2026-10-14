@@ -1,0 +1,67 @@
+.hero{
+    background-image:linear-gradient(rgba(0,0,0,0.44),rgba(0,0,0,0.44)), url("./Images/Search bus.jpeg ");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+.container{
+    color:#ffffff;
+}
+.container p{
+    text-align: left;
+    max-width: 550px;
+    line-height: 1.5;
+}
+.about-section {
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  color: #12315c;
+}
+.stat-card {
+  background: #f0f6ff;
+  border-radius: 10px;
+  padding: 15px 5px;
+  text-align: center;
+  height: 100%;
+}
+.stat-card i {
+  font-size: 25px;
+  color: #1675e8;
+}
+.choose-card {
+  border: 1px solid #e2eaf5;
+  border-radius: 12px;
+  padding: 20px;
+  height: 100%;
+  box-shadow: 0 4px 12px rgba(0, 40, 90, 0.05);
+}
+
+.feature-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.feature-item i {
+  background: #e5f0ff;
+  color: #1675e8;
+  border-radius: 50%;
+  min-width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+.feature-item p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #52657e;
+  margin: 0;
+}
+.contant{
+  background: #f0f6ff;
+}
+.footer{
+  background: #0f305d;
+}
