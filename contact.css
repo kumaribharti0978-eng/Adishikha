@@ -1,0 +1,41 @@
+.hero{
+    background-image:linear-gradient(rgba(0,0,0,0.44),rgba(0,0,0,0.44)), url("./Images/Search bus.jpeg ");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+.container{
+    color:#ffffff;
+}
+.container p{
+    text-align: left;
+    max-width: 400px;
+    line-height: 1.5;
+    font-family: 'sans-serif narrow ';
+}
+.card{
+    border-radius:10px;
+}
+.form-control:focus,.form-select:focus{
+    box-shadow:none;
+    border-color:#0d6efd;
+}
+.input-group-text{
+    background-color: #f8f9fa;;
+}
+.icon-circle{
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #f0f6ff;
+}
+.contant{
+    background: #f0f6ff;
+}
+.footer{
+  background: #0f305d;
+}
