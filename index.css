@@ -4,10 +4,10 @@
     border: border-box;;
 }
 .hero{
-    background-image:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url("./Images/BusYatra.png");
+    background-image:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url("./Images/Search bus.jpeg");
     background-size: cover;
     background-position: center;
-    height: 600px;
+    height: 400px;
 }
 .container{
     color:#ffffff;
