@@ -1,8 +1,10 @@
 .main-section {
+    min-height: calc(102vh - 80px);
     background-image: url("../Images/Bus-image.png");
     background-size:cover;
-    background-repeat: no-repeat;
-}
+    background-position: center ;
+    position: relative; 
+} 
 
 .main-section{
     margin-top: 60px;
